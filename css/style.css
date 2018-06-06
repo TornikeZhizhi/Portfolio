@@ -155,13 +155,13 @@ body {
     overflow: hidden;
     text-align: center;
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border-radius: 10px; }
     .about_cont .img_row .img_box img {
       transition: .4s;
       height: 100%;
       width: 100%;
-      cursor: pointer;
-      border-radius: 10px; }
+      cursor: pointer; }
       .about_cont .img_row .img_box img:hover {
         transform: scale(1.2, 1.2); }
 
@@ -176,13 +176,13 @@ body {
   height: 25px;
   background: linear-gradient(to right, #36eab0 0%, #1aad97 100%);
   border-radius: 20px;
-  width: 1%;
+  width: 100%;
   margin-top: 30px; }
   .skills_container .skil_progress_bar span {
-    padding-right: 10px; }
+    padding-right: 10px;
+    font-weight: bold; }
 
 .skil_html {
-  background-color: red;
   position: relative;
   animation-name: html;
   animation-duration: 3s;
@@ -190,6 +190,9 @@ body {
   animation-fill-mode: forwards; }
 
 @keyframes html {
+  0% {
+    left: 0%;
+    width: 0%; }
   100% {
     left: 0%;
     width: 88%; } }
@@ -202,6 +205,9 @@ body {
   animation-fill-mode: forwards; }
 
 @keyframes css {
+  0% {
+    left: 0%;
+    width: 0%; }
   100% {
     left: 0%;
     width: 83%; } }
@@ -214,6 +220,9 @@ body {
   animation-fill-mode: forwards; }
 
 @keyframes bootstrap {
+  0% {
+    left: 0%;
+    width: 0%; }
   100% {
     left: 0%;
     width: 73%; } }
@@ -226,6 +235,9 @@ body {
   animation-fill-mode: forwards; }
 
 @keyframes javascript {
+  0% {
+    left: 0%;
+    width: 0%; }
   100% {
     left: 0%;
     width: 33%; } }
@@ -238,6 +250,9 @@ body {
   animation-fill-mode: forwards; }
 
 @keyframes jquery {
+  0% {
+    left: 0%;
+    width: 0%; }
   100% {
     left: 0%;
     width: 44%; } }
@@ -270,7 +285,7 @@ body {
         background: #999999;
         position: absolute;
         border-radius: 50px;
-        left: -37px;
+        left: -38px;
         margin-top: 5px; }
     .experience_box .exp_row .exp_col .exp_info h5 {
       color: #888888;

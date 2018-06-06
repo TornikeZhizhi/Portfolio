@@ -264,15 +264,17 @@ body {
 					width: 100%;
     				margin: 0 auto;
     				// height: 500px;
+    				border-radius: 10px;
+
 					 img {
 					 	transition : .4s;
 					 	 height: 100%;
 					 	 width: 100%;
 					 	 cursor: pointer;
-					 	     border-radius: 10px;
+					 	     // border-radius: 10px;
 
 					 	 	&:hover {
-					 	 		transform:scale(1.2,1.2)
+					 	 		transform:scale(1.2,1.2);					 	 	
 					 	 	}
 					 }
 				}
@@ -304,11 +306,13 @@ body {
     			// background: #22eaaa;
     			background: linear-gradient(to right, rgba(54,234,176,1) 0%, rgba(26,173,151,1) 100%);
     			border-radius: 20px;
-    			width: 1%;
+    			width: 100%;
     			margin-top: 30px;
 
     			span {
     				padding-right: 10px;
+    				font-weight: bold;
+
     			}
 		}
 }
@@ -317,7 +321,6 @@ body {
 
 .skil_html {
 
-    background-color: red;
     position: relative;
     animation-name: html;
     animation-duration: 3s;
@@ -327,7 +330,8 @@ body {
 }
 
 @keyframes html {
-   
+
+   	0% { left:0%;width: 0%}
 
     100% { left:0%;width: 88%}
 }
@@ -348,7 +352,7 @@ body {
 
 @keyframes css {
    
-
+	0% { left:0%;width: 0%}
     100% { left:0%;width: 83%}
 }
 
@@ -367,7 +371,7 @@ body {
 
 @keyframes bootstrap {
    
-
+	0% { left:0%;width: 0%}
     100% { left:0%;width: 73%}
 }
 
@@ -385,7 +389,7 @@ body {
 
 @keyframes javascript {
    
-
+	0% { left:0%;width: 0%}
     100% { left:0%;width: 33%}
 }
 
@@ -402,7 +406,7 @@ body {
 
 @keyframes jquery {
    
-
+	0% { left:0%;width: 0%}
     100% { left:0%;width: 44%}
 }
 
@@ -457,7 +461,7 @@ body {
 							    background: #999999;
 							    position: absolute;
 							    border-radius: 50px;
-							    left: -37px;
+							    left: -38px;
 							    margin-top: 5px;
 						}
 					}
