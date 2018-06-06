@@ -1,0 +1,479 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border:none;
+	list-style-type: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+a:hover {
+	text-decoration: none;
+}
+ul,h1,h2,h3,h4 {
+	margin-bottom: 0px;
+}
+
+$ezreal: #36eab0;
+$mfont: Helvetica, sans-serif;
+
+body {
+	font-family: 'Libre Baskerville', serif;
+	background: rgba(50, 226, 173, .1);
+
+}
+
+
+.header_fluid{
+	background: #fff;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	// border-bottom: 1px solid #000;
+	// background: rgba(50, 226, 173, .6);
+
+.header_container {
+
+		.logo {
+
+				a {
+					display: inline-block;
+
+						img {
+							width: 60px;
+							height: auto;
+							padding: 20px 0;
+							 padding-top: 10px;
+						}
+				}
+		}
+
+
+		.navigation {
+
+			ul  {
+				display: flex;
+				height: 100%;
+
+					li {
+
+						padding: 0px 23px;
+						height: 100%;
+    					display: flex;
+    					align-items: center;
+
+							&:last-child {
+								padding-right: 0;
+							}
+
+						a {
+							color: #252525;
+							position: relative;
+							padding: 0px 5px;
+							transition:.5s;
+							text-transform: uppercase;
+							font-size: 14px;
+							letter-spacing: 1px;
+							transition:.4s;
+
+							&:hover {
+								color: $ezreal;
+							}
+
+
+							&:hover:after {
+								
+								width: 100%;
+								right: 0;
+							}
+
+							&:after {
+								content: "";
+								position: absolute;
+								width: 0%;
+								height: 3px;
+								border-radius: 30px;
+								background-color: $ezreal;
+								bottom: -11px;
+								left: 50%;
+								transform:translateX(-50%);								
+								letter-spacing: 0.5px;
+								transition:.4s;
+								padding-top: 5px;
+							}
+						}
+					}
+			}
+		}
+}
+
+}
+
+.main_fluid {
+
+	background-image: url("../img/christopher-gower-291246-unsplash.jpg");
+	margin-top: 98px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 48vw;
+	background-position: center center;
+	cursor: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	background-attachment: fixed;
+	overflow: hidden;
+
+		.paperjs {
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+			background-color: rgba(50, 226, 173, .1);
+			position: absolute;
+			top: 0;
+			left: 0;
+				canvas[resize] {
+    				width: 100%;
+    				height: 100%;
+}
+
+		}
+
+		.main_row{
+
+			// display: flex;
+			// align-items:center;
+			height: 100%;
+
+		.main_col {
+			// display: flex;
+			// justify-content:flex-end;
+			text-align: right;
+
+				.main_text {
+
+					 h1 {
+					 	color: #1fb89b;
+					 	font-size: 42px;
+					 	letter-spacing: 14px;
+					 	color: #fff;
+    					// font-family: arial;
+    					margin-top: 30px;
+    					text-transform: capitalize;
+
+					 }
+				}
+		}
+
+}
+
+
+}
+
+
+
+.about_cont {
+	.name_row {
+		padding: 100px 0;
+
+				.about_text {
+					 img {
+					 	display: inline-block;
+
+					 }
+
+					 h2 {
+					 	margin: 15px 0;
+					 }
+
+					 span {
+					 	font-style: italic;
+					 }
+				}
+	}
+
+
+	.img_row {
+		margin-top: 10px;
+		margin-bottom: 130px;
+
+
+			.about_text {
+				border: 3px solid $ezreal;
+				padding: 25px 10px;
+				padding-bottom: 0px;
+				position: relative;
+				    border-radius: 10px;
+
+				p:nth-child(2){
+
+					margin-bottom: 120px;
+				}
+			 
+
+
+				.fa_icons {
+					width: 100%;
+					display: flex;
+					justify-content: space-evenly;
+					background: $ezreal;
+					    padding: 10px 0;
+   					 position: absolute;
+   					 bottom: 0;
+   					 left: 0;
+
+						a {
+
+							display: inline-block;
+							background-color: #1bb098;
+							width: 60px;
+							height: 60px;
+							clip-path: polygon(0 19%, 0 0, 15% 0, 87% 0, 100% 0, 100% 18%, 100% 80%, 100% 100%, 83% 100%, 14% 100%, 0 100%, 0 80%);
+							display: flex;
+							border-radius: 5px;
+								justify-content: center;
+								align-items:center;
+								transition:.4s;
+
+								&:hover {
+									background-color: #000;
+									clip-path: polygon(0 19%, 18% 18%, 15% 0, 87% 0, 82% 15%, 100% 18%, 100% 80%, 78% 82%, 83% 100%, 14% 100%, 21% 81%, 0 80%);
+
+								}
+
+								&:hover i{
+									color: $ezreal;
+									
+								}
+
+
+
+							i {
+								color: #000;
+								transition:.4s;
+								font-size: 35px;
+							}
+						}
+				}
+			}
+
+				.img_box {
+					overflow: hidden;
+					text-align: center;
+					width: 100%;
+    				margin: 0 auto;
+    				// height: 500px;
+					 img {
+					 	transition : .4s;
+					 	 height: 100%;
+					 	 width: 100%;
+					 	 cursor: pointer;
+					 	     border-radius: 10px;
+
+					 	 	&:hover {
+					 	 		transform:scale(1.2,1.2)
+					 	 	}
+					 }
+				}
+			
+	}
+}
+
+
+.skills_container {
+
+		.skil_tittle {
+			margin-bottom: 50px;
+
+			p {
+				margin-top: 30px;
+			}
+		}
+
+
+
+		.skil_info {
+			margin-top: 30px;
+			padding-left: 30px;
+		}
+
+
+		.skil_progress_bar {
+			    height: 25px;
+    			// background: #22eaaa;
+    			background: linear-gradient(to right, rgba(54,234,176,1) 0%, rgba(26,173,151,1) 100%);
+    			border-radius: 20px;
+    			width: 1%;
+    			margin-top: 30px;
+
+    			span {
+    				padding-right: 10px;
+    			}
+		}
+}
+
+
+
+.skil_html {
+
+    background-color: red;
+    position: relative;
+    animation-name: html;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes html {
+   
+
+    100% { left:0%;width: 88%}
+}
+
+
+
+
+.skil_css {
+
+    background-color: red;
+    position: relative;
+    animation-name: css;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes css {
+   
+
+    100% { left:0%;width: 83%}
+}
+
+
+
+.skil_bootstrap {
+
+    background-color: red;
+    position: relative;
+    animation-name: bootstrap;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes bootstrap {
+   
+
+    100% { left:0%;width: 73%}
+}
+
+
+.skil_javascript {
+
+    background-color: red;
+    position: relative;
+    animation-name: javascript;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes javascript {
+   
+
+    100% { left:0%;width: 33%}
+}
+
+.skil_jquery {
+
+    background-color: red;
+    position: relative;
+    animation-name: jquery;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes jquery {
+   
+
+    100% { left:0%;width: 44%}
+}
+
+
+
+.experience_box {
+
+	    padding: 190px 0;
+
+		.exp_tittle_row {
+			margin-bottom: 70px;
+		}
+
+		.exp_row{
+			// margin-top: 100px;
+
+			.time_col{
+
+					display: flex;
+				    align-items: baseline;
+				    justify-content: flex-end;
+				    padding-top: 13px;
+				    padding-right: 45px;
+
+				span {
+				font-size: 16px;
+			    font-weight: 700;
+			    background: #22eaaa;
+			    color: #fff;
+			    padding: 8px 25px;
+			    // margin-left: 99px;
+			    border-radius: 5px;
+
+				}
+			}
+
+
+			.exp_col{
+
+			border-left: 1px solid #888;
+		    padding: 20px 0 40px 30px;
+				.exp_info {
+
+
+					h4 {
+						position: relative;
+
+						&:after {
+							      content: '';
+							    width: 15px;
+							    height: 15px;
+							    background: #999999;
+							    position: absolute;
+							    border-radius: 50px;
+							    left: -37px;
+							    margin-top: 5px;
+						}
+					}
+					
+
+					h5 {
+						 color: #888888;
+    					margin: 23px 0;
+					}
+
+					p {
+						color: #888888
+					}
+				}
+
+			}
+		}
+}
+
