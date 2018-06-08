@@ -1,49 +1,73 @@
 
 
 
-// x = 1;
+//     	x = 0;
 
-// function blink(){
+// // function html(){
 
-// $(".skil_html span").text(x + "%")
+// // $(".skil_html span").text(x + "%")
 
-// 	if (x === 88) {
+// // 	// if (x === 88) {
 
-// 		clearInterval(stop)
+// // 	// 	clearInterval(stop)
 
-// 	}
-// 	x++;
-// }
-// var stop =  setInterval(blink,20);
+// // 	// }
+// // 	x++;
+// // }
+// var stop =  setInterval(html,15);
+//         $(document).off('scroll');
 
 
+
+
+var clasArr = ["skil_html","skil_css","skil_bootstrap","skil_javascript","skil_jquery"];
 
 
 $(document).on('scroll',function() {
 
 var pos =  $(this).scrollTop();
 
-    if (pos >1050) {
+console.log(pos)
 
-    	x = 0;
+    if (pos >1000 && $(document).width() > 992 ) {
 
-function html(){
 
-$(".skil_html span").text(x + "%")
+		$('.skil_progress_bar').each(function(index,current){
+			$(this).addClass(clasArr[index]);
 
-	if (x === 88) {
+			});
 
-		clearInterval(stop)
 
-	}
-	x++;
-}
-var stop =  setInterval(html,25);
-        $(document).off('scroll');
-    } 
-        
-    
+
+    		setInterval(function(){
+
+		$(".skil_progress_bar").each(function(){
+		var child= $(this).width();
+		var parent=$(this).parent().width();
+		var proc = Math.floor(((child / parent) * 100) +1);
+		$(this).text(proc + "%");
+
+		})
+
+
+
+	},30);
+
+
+    }
+
+
 });
+
+
+
+// $('.skil_progress_bar').addClass("skil_html")
+			
+
+		
+
+
+
 
 
 

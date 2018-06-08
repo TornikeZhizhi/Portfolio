@@ -177,7 +177,8 @@ body {
   background: linear-gradient(to right, #36eab0 0%, #1aad97 100%);
   border-radius: 20px;
   width: 100%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  padding-right: 5px; }
   .skills_container .skil_progress_bar span {
     padding-right: 10px;
     font-weight: bold; }
@@ -185,9 +186,10 @@ body {
 .skil_html {
   position: relative;
   animation-name: html;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
 
 @keyframes html {
   0% {
@@ -200,9 +202,10 @@ body {
   background-color: red;
   position: relative;
   animation-name: css;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
 
 @keyframes css {
   0% {
@@ -215,9 +218,10 @@ body {
   background-color: red;
   position: relative;
   animation-name: bootstrap;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
 
 @keyframes bootstrap {
   0% {
@@ -230,8 +234,9 @@ body {
   background-color: red;
   position: relative;
   animation-name: javascript;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
+  animation-timing-function: linear;
   animation-fill-mode: forwards; }
 
 @keyframes javascript {
@@ -245,9 +250,10 @@ body {
   background-color: red;
   position: relative;
   animation-name: jquery;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
 
 @keyframes jquery {
   0% {
@@ -257,7 +263,8 @@ body {
     left: 0%;
     width: 44%; } }
 .experience_box {
-  padding: 190px 0; }
+  padding: 190px 0;
+  padding-bottom: 120px; }
   .experience_box .exp_tittle_row {
     margin-bottom: 70px; }
   .experience_box .exp_row .time_col {
@@ -292,5 +299,70 @@ body {
       margin: 23px 0; }
     .experience_box .exp_row .exp_col .exp_info p {
       color: #888888; }
+
+.portf_container .portf_tittle h4 {
+  color: #000; }
+.portf_container .boxes_row {
+  margin: 50px 0; }
+  .portf_container .boxes_row .port_box {
+    border: 5px solid #36eab0;
+    margin-top: 50px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer; }
+    .portf_container .boxes_row .port_box:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(54, 234, 176, 0.4);
+      position: absolute;
+      transform: scale(0);
+      transition: .6s; }
+    .portf_container .boxes_row .port_box:hover:after {
+      transform: scale(1); }
+    .portf_container .boxes_row .port_box a {
+      display: block;
+      transition: .3s; }
+      .portf_container .boxes_row .port_box a img {
+        width: 100%;
+        display: block;
+        transition: .4s;
+        clip-path: polygon(0 11%, 0 0, 11% 0, 87% 0, 100% 0, 100% 8%, 100% 90%, 200% 100%, 90% 100%, 12% 100%, 0 100%, 0 89%);
+        cursor: pointer; }
+
+@keyframes hvr-ripple-out {
+  100% {
+    top: -32px;
+    right: -32px;
+    bottom: -32px;
+    left: -32px;
+    opacity: 0; } }
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #36eab0 solid 11px;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-delay: .35s;
+  cursor: pointer; }
+
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out; }
 
 /*# sourceMappingURL=style.css.map */

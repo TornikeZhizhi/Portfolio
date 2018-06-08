@@ -308,6 +308,7 @@ body {
     			border-radius: 20px;
     			width: 100%;
     			margin-top: 30px;
+    			    padding-right: 5px;
 
     			span {
     				padding-right: 10px;
@@ -323,9 +324,10 @@ body {
 
     position: relative;
     animation-name: html;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count:1;
     animation-fill-mode: forwards;
+  	animation-timing-function: linear;
 
 }
 
@@ -344,12 +346,12 @@ body {
     background-color: red;
     position: relative;
     animation-name: css;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count:1;
     animation-fill-mode: forwards;
+   	animation-timing-function: linear;
 
 }
-
 @keyframes css {
    
 	0% { left:0%;width: 0%}
@@ -363,9 +365,10 @@ body {
     background-color: red;
     position: relative;
     animation-name: bootstrap;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count:1;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
 
 }
 
@@ -381,9 +384,11 @@ body {
     background-color: red;
     position: relative;
     animation-name: javascript;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count:1;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
+
 
 }
 
@@ -398,9 +403,10 @@ body {
     background-color: red;
     position: relative;
     animation-name: jquery;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count:1;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;;
 
 }
 
@@ -415,6 +421,7 @@ body {
 .experience_box {
 
 	    padding: 190px 0;
+	    padding-bottom: 120px;
 
 		.exp_tittle_row {
 			margin-bottom: 70px;
@@ -481,3 +488,113 @@ body {
 		}
 }
 
+
+
+.portf_container {
+	// padding: 100px 0;
+
+
+
+		.portf_tittle {
+			h4 {
+				color: #000;
+			}
+		}
+
+		.boxes_row{
+
+			margin: 50px 0;
+
+		.port_box {
+
+			// overflow: hidden;
+			border: 5px solid $ezreal;
+			margin-top: 50px;
+			 border-radius: 5px;
+			 position: relative;
+			 cursor: pointer;
+
+			 &:after {
+			 	content: "";
+			 	width: 100%;
+			 	height: 100%;
+			 	top: 0;
+			 	left: 0;
+			 	background-color: rgba(54, 234, 176, .4s);
+			 	position: absolute;
+			 	transform:scale(0);
+			 	transition:.6s;
+			 }
+
+			 &:hover:after {
+			 	transform:scale(1);
+			 }
+
+
+			a  {
+
+				display: block;
+				transition:.3s;
+
+					img {
+						width: 100%;
+						display: block;
+						transition: .4s;
+						clip-path: polygon(0 11%, 0 0, 11% 0, 87% 0, 100% 0, 
+							100% 8%, 100% 90%, 200% 100%, 90% 100%, 12% 100%, 0 100%, 0 89%);
+						cursor: pointer;
+
+					
+		}
+					}
+			}
+
+		}	
+
+}
+
+
+
+@keyframes hvr-ripple-out {
+
+	// 0% {
+ //    top: -12px;
+ //    right: -12px;
+ //    bottom: -12px;
+ //    left: -12px;
+ //    opacity: 1;
+ //  }
+  100% {
+    top: -32px;
+    right: -32px;
+    bottom: -32px;
+    left: -32px;
+    opacity: 0;
+  }
+}
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: $ezreal solid 11px;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-delay:.35s;
+  cursor: pointer;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+}
