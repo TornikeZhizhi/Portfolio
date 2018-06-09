@@ -82,146 +82,146 @@ $(document).ready(function(){
 
 
 
-var clasArr = ["skil_html","skil_css","skil_bootstrap","skil_javascript","skil_jquery"];
+// var clasArr = ["skil_html","skil_css","skil_bootstrap","skil_javascript","skil_jquery"];
 
 
-$(document).on('scroll',function() {
+// $(document).on('scroll',function() {
 
-var pos =  $(this).scrollTop();
+// var pos =  $(this).scrollTop();
 
-console.log(pos)
+// console.log(pos)
 
-    if (pos >955 && $(document).width() > 992 ) {
-
-
-		$('.skil_progress_bar').each(function(index,current){
-			$(this).addClass(clasArr[index]);
-
-			});
+ //    if (pos >955 && $(document).width() > 992 ) {
 
 
+	// 	$('.skil_progress_bar').each(function(index,current){
+	// 		$(this).addClass(clasArr[index]);
 
-    		setInterval(function(){
-
-		$(".skil_progress_bar").each(function(){
-		var child= $(this).width();
-		var parent=$(this).parent().width();
-		var proc = Math.floor(((child / parent) * 100) +1);
-		$(this).text(proc + "%");
-
-		})
+	// 		});
 
 
 
-	},30);
+ //    		setInterval(function(){
 
+	// 	$(".skil_progress_bar").each(function(){
+	// 	var child= $(this).width();
+	// 	var parent=$(this).parent().width();
+	// 	var proc = Math.floor(((child / parent) * 100) +1);
+	// 	$(this).text(proc + "%");
 
-    };
-
-
-    if (pos > 850 && $(document).width() < 992 && $(document).width() > 576 ) {
-
-
-		$('.skil_progress_bar').each(function(index,current){
-			$(this).addClass(clasArr[index]);
-
-			});
+	// 	})
 
 
 
-    		setInterval(function(){
-
-		$(".skil_progress_bar").each(function(){
-		var child= $(this).width();
-		var parent=$(this).parent().width();
-		var proc = Math.floor(((child / parent) * 100) +1);
-		$(this).text(proc + "%");
-
-		})
+	// },30);
 
 
-
-	},30);
-
-
-    }
-
-    if (pos > 1035 && $(document).width() < 576 ) {
+//     };
 
 
-		$('.skil_progress_bar').each(function(index,current){
-			$(this).addClass(clasArr[index]);
+//     if (pos > 850 && $(document).width() < 992 && $(document).width() > 576 ) {
 
-			});
+
+// 		$('.skil_progress_bar').each(function(index,current){
+// 			$(this).addClass(clasArr[index]);
+
+// 			});
 
 
 
-    		setInterval(function(){
+//     		setInterval(function(){
 
-		$(".skil_progress_bar").each(function(){
-		var child= $(this).width();
-		var parent=$(this).parent().width();
-		var proc = Math.floor(((child / parent) * 100) +1);
-		$(this).text(proc + "%");
+// 		$(".skil_progress_bar").each(function(){
+// 		var child= $(this).width();
+// 		var parent=$(this).parent().width();
+// 		var proc = Math.floor(((child / parent) * 100) +1);
+// 		$(this).text(proc + "%");
 
-		})
-
-
-
-	},30);
+// 		})
 
 
-    }
+
+// 	},30);
 
 
-});
+//     }
+
+//     if (pos > 1035 && $(document).width() < 576 ) {
+
+
+// 		$('.skil_progress_bar').each(function(index,current){
+// 			$(this).addClass(clasArr[index]);
+
+// 			});
+
+
+
+//     		setInterval(function(){
+
+// 		$(".skil_progress_bar").each(function(){
+// 		var child= $(this).width();
+// 		var parent=$(this).parent().width();
+// 		var proc = Math.floor(((child / parent) * 100) +1);
+// 		$(this).text(proc + "%");
+
+// 		})
+
+
+
+// 	},30);
+
+
+//     }
+
+
+// });
 
 
 // about animaciebis
 
-$(document).on('scroll',function() {
+// $(document).on('scroll',function() {
 
-var pos =  $(this).scrollTop();
+// var pos =  $(this).scrollTop();
 
-console.log(pos)
+// console.log(pos)
 
-    if (pos >285 && $(document).width() > 992 ){
+//     if (pos >285 && $(document).width() > 992 ){
 
-    	$(".img_box").addClass("bounceInLeft");
-    	$(".img_row .about_text").addClass("bounceInRight");
-
-
-    }else if (pos >225 && $(document).width() < 992 && $(document).width() > 576 ) {
-
-    		$(".img_box").addClass("bounceInLeft");
-    	$(".img_row .about_text").addClass("bounceInRight");
+//     	$(".img_box").addClass("bounceInLeft");
+//     	$(".img_row .about_text").addClass("bounceInRight");
 
 
-    }else if (pos >20 && $(document).width() < 576) {
+//     }else if (pos >225 && $(document).width() < 992 && $(document).width() > 576 ) {
 
-    	$(".img_box").addClass("bounceInLeft");
-    	$(".img_row .about_text").addClass("bounceInRight");
-    }
+//     		$(".img_box").addClass("bounceInLeft");
+//     	$(".img_row .about_text").addClass("bounceInRight");
+
+
+//     }else if (pos >20 && $(document).width() < 576) {
+
+//     	$(".img_box").addClass("bounceInLeft");
+//     	$(".img_row .about_text").addClass("bounceInRight");
+//     }
 
 // experience animation
 
-if (pos >1550 && $(document).width() > 992 ){
+// if (pos >1550 && $(document).width() > 992 ){
 
-    	$(".time_col").addClass("rollIn");
-    	$(".exp_info").addClass("rollIn");
-
-
-    }else if (pos >1530 && $(document).width() > 576 ) {
+//     	$(".time_col").addClass("rollIn");
+//     	$(".exp_info").addClass("rollIn");
 
 
-    	$(".time_col").addClass("rollIn");
-    	$(".exp_info").addClass("rollIn");
+//     }else if (pos >1530 && $(document).width() > 576 ) {
 
-    }else if (pos >1690 && $(document).width() < 576 ) {
 
-    		$(".time_col").addClass("rollIn");
-    	$(".exp_info").addClass("rollIn");
-    }
+//     	$(".time_col").addClass("rollIn");
+//     	$(".exp_info").addClass("rollIn");
+
+//     }else if (pos >1690 && $(document).width() < 576 ) {
+
+//     		$(".time_col").addClass("rollIn");
+//     	$(".exp_info").addClass("rollIn");
+//     }
 
     
 //portf animace
@@ -229,67 +229,228 @@ if (pos >1550 && $(document).width() > 992 ){
 
 
 
-if (pos >2251 && $(document).width() > 992 ){
+// if (pos >2251 && $(document).width() > 992 ){
 
-    	$(".port_box").addClass("zoomInDown");
+//     	$(".port_box").addClass("zoomInDown");
     	
-    }else if (pos >2441 && $(document).width() < 992 && $(document).width() > 576) {
+//     }else if (pos >2441 && $(document).width() < 992 && $(document).width() > 576) {
 
-    	$(".port_box").addClass("zoomInDown");
-    }else if (pos >2750 && $(document).width() < 576) {
+//     	$(".port_box").addClass("zoomInDown");
+//     }else if (pos >2750 && $(document).width() < 576) {
 
-    	$(".port_box").addClass("zoomInDown");
+//     	$(".port_box").addClass("zoomInDown");
 
-    }
-
-
-
-if (pos >3268 && $(document).width() > 992 ){
-
-    	$(".contact_mail").addClass("bounceInLeft");
-    	$(".contact_right").addClass("bounceInRight");
-
-
-    }else if (pos >5664 && $(document).width() < 992 && $(document).width() > 576 ) {
-
-		$(".contact_mail").addClass("bounceInLeft");
-    	$(".contact_right").addClass("bounceInRight");
-
-
-    }else if (pos >4808 && $(document).width() < 576) {
-
-    		$(".contact_mail").addClass("bounceInLeft");
-    	$(".contact_right").addClass("bounceInRight");
-    }
+//     }
 
 
 
-    if (pos >100 ) {
+// if (pos >3268 && $(document).width() > 992 ){
 
-    	$(".logo img").css("width","40px")
-    }else if (pos < 100) {
-
-    	$(".logo img").css("width","60px")
-    }
+//     	$(".contact_mail").addClass("bounceInLeft");
+//     	$(".contact_right").addClass("bounceInRight");
 
 
-})
+//     }else if (pos >5664 && $(document).width() < 992 && $(document).width() > 576 ) {
+
+// 		$(".contact_mail").addClass("bounceInLeft");
+//     	$(".contact_right").addClass("bounceInRight");
+
+
+//     }else if (pos >4808 && $(document).width() < 576) {
+
+//     		$(".contact_mail").addClass("bounceInLeft");
+//     	$(".contact_right").addClass("bounceInRight");
+//     }
+
+
+
+//     if (pos >100 ) {
+
+//     	$(".logo img").css("width","40px")
+//     }else if (pos < 100) {
+
+//     	$(".logo img").css("width","60px")
+//     }
+
+
+// })
 
 
 // $('.skil_progress_bar').addClass("skil_html")
 			
 
 		
+// var $animation_elements = $('.img_box');
+// var $animation_elements2 = $('.img_row .about_text');
+// var $window = $(window);
+
+
+$(window).on('scroll', check_if_in_view);
+$(window).on('scroll resize', check_if_in_view);
+$(window).trigger('scroll');
+
+function check_if_in_view() {
+  var window_height = $(window).height();
+  var window_top_position = $(window).scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($('.img_box'), function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+
+      $('.img_box').addClass('bounceInLeft');
+      $('.img_row .about_text').addClass('bounceInRight');
+
+    }
+
+  });
+}
+
+
+
+$(window).on('scroll', check_if_in_view2);
+$(window).on('scroll resize', check_if_in_view2);
+$(window).trigger('scroll');
+
+function check_if_in_view2() {
+  var window_height = $(window).height();
+  var window_top_position = $(window).scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($('.time_col'), function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+
+      $('.time_col').addClass('rollIn');
+      $('.exp_col').addClass('rollIn');
+
+    }
+  });
+}
+
+
+
+$(window).on('scroll', check_if_in_view3);
+$(window).on('scroll resize', check_if_in_view3);
+$(window).trigger('scroll');
+
+function check_if_in_view3() {
+  var window_height = $(window).height();
+  var window_top_position = $(window).scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($('.port_box'), function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+
+      $(this).addClass('zoomInDown');
+     
+
+    }
+  });
+}
+
+
+
+$(window).on('scroll', check_if_in_view4);
+$(window).on('scroll resize', check_if_in_view4);
+$(window).trigger('scroll');
+
+function check_if_in_view4() {
+  var window_height = $(window).height();
+  var window_top_position = $(window).scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($('.contact_mail'), function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+
+      $('.contact_mail').addClass('bounceInLeft');
+      $('.contact_right').addClass('bounceInRight');
+     
+
+    }
+  });
+}
+
+
+
+$(window).on('scroll', check_if_in_view5);
+$(window).on('scroll resize', check_if_in_view5);
+$(window).trigger('scroll');
+
+var clasArr = ["skil_html","skil_css","skil_bootstrap","skil_javascript","skil_jquery"];
+
+function check_if_in_view5() {
+  var window_height = $(window).height();
+  var window_top_position = $(window).scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($('.skil_progress_bar'), function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+
+      $('.skil_progress_bar').addClass('skil_html');
+      
+     
+		$('.skil_progress_bar').each(function(index,current){
+			$(this).addClass(clasArr[index]);
+			});
+
+			setInterval(function(){
+
+		$(".skil_progress_bar").each(function(){
+		var child= $(this).width();
+		var parent=$(this).parent().width();
+		var proc = Math.floor(((child / parent) * 100) +1);
+		$(this).text(proc + "%");
+
+		})
+
+
+
+	},30);
+
+
+    }
+  });
+}
 
 
 
 
 
 
-
-
-
-	
 
 
 
