@@ -3,9 +3,10 @@
 <head>
 	<title>Reset Files</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kotta+One" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
     <script type="text/javascript" src="js/paper-full.js"></script>
@@ -135,29 +136,50 @@
 <div class="container-fluid header_fluid">
 <header class="container header_container">
 	<div class="row">
-		<div class="col-lg-2">
+		<div class="col-lg-2 col-9">
 			<div class="logo">
-				<a href=""><img src="img/t logo.png2.png"></a>
+				<a href=""><img src="img/t logo.png2.png" style="transition: .4s;"></a>
 			</div>
 		</div>
 
-		<div class="col-lg-10 d-flex justify-content-end">
-			<div class="navigation">
+		<div class="col-lg-10 col-3 d-flex justify-content-end">
+
+			<div class="navigation navbar" id="myNavbar" id="sec1">
 				<ul>
-					<li><a id="tokee" href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Skills</a></li>
-					<li><a href="">Experience</a></li>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#sec1">Home</a></li>
+					<li><a href="#sec2">About</a></li>
+					<li><a href="#sec3">Skills</a></li>
+					<li><a href="#sec4">Experience</a></li>
+					<li><a href="#sec5">Portfolio</a></li>
+					<li><a href="#sec6">Contact</a></li>
 				</ul>
 			</div>
+
+			<div class="resp_navbar">
+				<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content navbar" id="myNavbar">
+    <a href="#sec1">Home</a>
+    <a href="#sec2">About</a>
+    <a href="#sec3">Skills</a>
+    <a href="#sec4">Experience</a>
+    <a href="#sec5">Portfolio</a>
+    <a href="#sec6">Contact</a>
+  </div>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer;color: #36eab0;" onclick="openNav()">&#9776;</span>
+
+			</div>
+
+
 		</div>
 	</div>
 </header>
 </div>
 
-<div class="container-fluid main_fluid">
+<div class="container-fluid main_fluid" id="sec1">
 
  <div class="paperjs">
     <canvas id="canvas" resize></canvas>
@@ -178,9 +200,9 @@
 
 
 
-<div class="container about_cont">
+<div class="container-fluid about_cont" id="sec2">
 
-
+<div class="container">
 	<div class="row name_row">
 		<div class="col-12">
 			<div class="about_text text-center">
@@ -193,13 +215,13 @@
 
 	<div class="row img_row">
 
-		<div class="col-md-6">
+		<div class="col-md-6 col-12">
 			<div class="img_box">
 				<img src="img/photo-1457305237443-44c3d5a30b89.jpg" class="img-fluid">
 			</div>
 		</div>
 
-		<div class="col-md-6">
+		<div class="col-md-6 col-12">
 			
 			<div class="about_text">
 				<p>Holla my friends ! I’m a web developer and graphic designer living in Amherst, Nova Scotia, Canada. I spend my days with my hands in many different areas of web development from back end programming to front end engineering, digital accessibility, user experience and visual design.</p>
@@ -217,12 +239,12 @@
 		</div>
 
 	</div>
-
+	</div>
 </div>
 
 
 
-<div class="container skills_container">
+<div class="container skills_container" id="sec3">
 	<div class="row">
 		<div class="col-lg-6 mx-auto text-center skil_tittle">
 			<h3>Work Skills</h3>
@@ -299,7 +321,7 @@
 
 
 
-<div class="container experience_box">
+<div class="container experience_box" id="sec4">
 	<div class="row exp_tittle_row">
 		<div class="col-12 text-center">
 				<h4>Work Experience</h4>
@@ -341,7 +363,7 @@
 </div>
 
 
-<div class="container portf_container">
+<div class="container portf_container" id="sec5">
 	<div class="row">
 		<div class="col-12 text-center portf_tittle">
 			<h4>Portfolio</h4>
@@ -396,9 +418,68 @@
 </div>
 
 
+<div class="container conact_cont" id="sec6">
+	<div class="row">
+		<div class="col-12">
+			<div class="contact_tittle text-center">
+				<h4>Contact Me</h4>
+			</div>
+		</div>
+	</div>	
+</div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<div class="container-fluid contact_fluid">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="contact_mail">
+					<form action="#">
+						<input type="text" name="" placeholder="Your Name">
+						<input type="email" name="" placeholder="Your Email">
+						<input type="text" name="" placeholder="Your Subject">
+						<textarea placeholder="Write Your Messages"></textarea>
+						<input type="submit" name="" value="Send">
+					</form>
+				</div>
+			</div>
+
+		<div class="col-md-6">
+			<div class="contact_right">
+				<div class="cnt_text">
+					<p>Feel free to contact me if you have any questions. I occasionally take freelance design projects and perform design audits and consultations to help improve existing websites.</p>
+				</div>
+
+				<div class="fa_icons">
+					<span><i class="fas fa-phone"></i>555 25 24 59</span>
+					<span><i class="fas fa-envelope"></i>Tornike.zhizhiashvili@geolab.edu.ge</span>
+					<span><i class="fas fa-map-marker"></i>Tbilisi, Georgia</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+
 <script src="js/bootstrap.bundle.min.js"></script>
 
 <script src="js/portf.js"></script>
