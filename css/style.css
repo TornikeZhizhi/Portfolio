@@ -5,6 +5,7 @@
   border: none;
   list-style-type: none;
   text-decoration: none;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 a:hover {
@@ -30,12 +31,18 @@ body {
       padding: 20px 0;
       padding-top: 10px; }
   .header_fluid .header_container .navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%; }
     .header_fluid .header_container .navigation ul li {
       padding: 0px 23px;
       height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center; }
       .header_fluid .header_container .navigation ul li:last-child {
         padding-right: 0; }
@@ -43,10 +50,14 @@ body {
         color: #252525;
         position: relative;
         padding: 0px 5px;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
         text-transform: uppercase;
         font-size: 14px;
         letter-spacing: 1px;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
         transition: .4s; }
         .header_fluid .header_container .navigation ul li a:hover {
           color: #36eab0; }
@@ -62,8 +73,12 @@ body {
           background-color: #36eab0;
           bottom: -11px;
           left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
           transform: translateX(-50%);
           letter-spacing: 0.5px;
+          -webkit-transition: .4s;
+          -o-transition: .4s;
           transition: .4s;
           padding-top: 5px; }
 
@@ -129,7 +144,11 @@ body {
         margin-bottom: 120px; }
       .about_cont .img_row .about_text .fa_icons {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
         background: #36eab0;
         padding: 10px 0;
@@ -141,19 +160,31 @@ body {
           background-color: #1bb098;
           width: 60px;
           height: 60px;
+          -webkit-clip-path: polygon(0 19%, 0 0, 15% 0, 87% 0, 100% 0, 100% 18%, 100% 80%, 100% 100%, 83% 100%, 14% 100%, 0 100%, 0 80%);
           clip-path: polygon(0 19%, 0 0, 15% 0, 87% 0, 100% 0, 100% 18%, 100% 80%, 100% 100%, 83% 100%, 14% 100%, 0 100%, 0 80%);
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           border-radius: 5px;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
+          -webkit-transition: .4s;
+          -o-transition: .4s;
           transition: .4s; }
           .about_cont .img_row .about_text .fa_icons a:hover {
             background-color: #000;
+            -webkit-clip-path: polygon(0 19%, 18% 18%, 15% 0, 87% 0, 82% 15%, 100% 18%, 100% 80%, 78% 82%, 83% 100%, 14% 100%, 21% 81%, 0 80%);
             clip-path: polygon(0 19%, 18% 18%, 15% 0, 87% 0, 82% 15%, 100% 18%, 100% 80%, 78% 82%, 83% 100%, 14% 100%, 21% 81%, 0 80%); }
           .about_cont .img_row .about_text .fa_icons a:hover i {
             color: #36eab0; }
           .about_cont .img_row .about_text .fa_icons a i {
             color: #000;
+            -webkit-transition: .4s;
+            -o-transition: .4s;
             transition: .4s;
             font-size: 35px; }
     .about_cont .img_row .img_box {
@@ -164,11 +195,15 @@ body {
       border-radius: 10px;
       height: 358px; }
       .about_cont .img_row .img_box img {
+        -webkit-transition: .4s;
+        -o-transition: .4s;
         transition: .4s;
         height: 100%;
         width: 100%;
         cursor: pointer; }
         .about_cont .img_row .img_box img:hover {
+          -webkit-transform: scale(1.2, 1.2);
+          -ms-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2); }
 
 .skills_container {
@@ -182,11 +217,15 @@ body {
     padding-left: 30px; }
   .skills_container .skil_progress_bar {
     height: 25px;
+    background: -webkit-gradient(linear, left top, right top, from(#36eab0), to(#1aad97));
+    background: -webkit-linear-gradient(left, #36eab0 0%, #1aad97 100%);
+    background: -o-linear-gradient(left, #36eab0 0%, #1aad97 100%);
     background: linear-gradient(to right, #36eab0 0%, #1aad97 100%);
     border-radius: 20px;
     width: 0%;
     margin-top: 30px;
     padding-right: 5px;
+    -webkit-box-shadow: 5px 3px 13px 2px black;
     box-shadow: 5px 3px 13px 2px black; }
     .skills_container .skil_progress_bar span {
       padding-right: 10px;
@@ -194,12 +233,24 @@ body {
 
 .skil_html {
   position: relative;
+  -webkit-animation-name: html;
   animation-name: html;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
+@-webkit-keyframes html {
+  0% {
+    left: 0%;
+    width: 0%; }
+  100% {
+    left: 0%;
+    width: 88%; } }
 @keyframes html {
   0% {
     left: 0%;
@@ -210,12 +261,24 @@ body {
 .skil_css {
   background-color: red;
   position: relative;
+  -webkit-animation-name: css;
   animation-name: css;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
+@-webkit-keyframes css {
+  0% {
+    left: 0%;
+    width: 0%; }
+  100% {
+    left: 0%;
+    width: 83%; } }
 @keyframes css {
   0% {
     left: 0%;
@@ -226,12 +289,24 @@ body {
 .skil_bootstrap {
   background-color: red;
   position: relative;
+  -webkit-animation-name: bootstrap;
   animation-name: bootstrap;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
+@-webkit-keyframes bootstrap {
+  0% {
+    left: 0%;
+    width: 0%; }
+  100% {
+    left: 0%;
+    width: 73%; } }
 @keyframes bootstrap {
   0% {
     left: 0%;
@@ -242,12 +317,24 @@ body {
 .skil_javascript {
   background-color: red;
   position: relative;
+  -webkit-animation-name: javascript;
   animation-name: javascript;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
+@-webkit-keyframes javascript {
+  0% {
+    left: 0%;
+    width: 0%; }
+  100% {
+    left: 0%;
+    width: 33%; } }
 @keyframes javascript {
   0% {
     left: 0%;
@@ -258,12 +345,24 @@ body {
 .skil_jquery {
   background-color: red;
   position: relative;
+  -webkit-animation-name: jquery;
   animation-name: jquery;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
+@-webkit-keyframes jquery {
+  0% {
+    left: 0%;
+    width: 0%; }
+  100% {
+    left: 0%;
+    width: 44%; } }
 @keyframes jquery {
   0% {
     left: 0%;
@@ -274,12 +373,24 @@ body {
 .skil_photoshop {
   background-color: red;
   position: relative;
+  -webkit-animation-name: photoshop;
   animation-name: photoshop;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
+@-webkit-keyframes photoshop {
+  0% {
+    left: 0%;
+    width: 0%; }
+  100% {
+    left: 0%;
+    width: 52%; } }
 @keyframes photoshop {
   0% {
     left: 0%;
@@ -290,12 +401,24 @@ body {
 .skil_illustrator {
   background-color: red;
   position: relative;
+  -webkit-animation-name: illustrator;
   animation-name: illustrator;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
+@-webkit-keyframes illustrator {
+  0% {
+    left: 0%;
+    width: 0%; }
+  100% {
+    left: 0%;
+    width: 47%; } }
 @keyframes illustrator {
   0% {
     left: 0%;
@@ -311,8 +434,14 @@ body {
   .experience_box .exp_tittle_row {
     margin-bottom: 70px; }
   .experience_box .exp_row .time_col {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     padding-top: 13px;
     padding-right: 45px; }
@@ -356,28 +485,47 @@ body {
       border-radius: 5px;
       position: relative;
       cursor: pointer; }
-      .portf_container .boxes_row .port_box:after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba(54, 234, 176, 0.4);
-        position: absolute;
-        transform: scale(0);
-        transition: .3s; }
-      .portf_container .boxes_row .port_box:hover:after {
-        transform: scale(1); }
       .portf_container .boxes_row .port_box a {
         display: block;
-        transition: .3s; }
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        position: relative; }
+        .portf_container .boxes_row .port_box a:after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(54, 234, 176, 0.4);
+          position: absolute;
+          -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+          transform: scale(0);
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s; }
+        .portf_container .boxes_row .port_box a:hover:after {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1); }
         .portf_container .boxes_row .port_box a img {
           width: 100%;
           display: block;
+          -webkit-transition: .4s;
+          -o-transition: .4s;
           transition: .4s;
+          -webkit-clip-path: polygon(0 11%, 0 0, 11% 0, 87% 0, 100% 0, 100% 8%, 100% 90%, 200% 100%, 90% 100%, 12% 100%, 0 100%, 0 89%);
           clip-path: polygon(0 11%, 0 0, 11% 0, 87% 0, 100% 0, 100% 8%, 100% 90%, 200% 100%, 90% 100%, 12% 100%, 0 100%, 0 89%);
           cursor: pointer; }
 
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -32px;
+    right: -32px;
+    bottom: -32px;
+    left: -32px;
+    opacity: 0; } }
 @keyframes hvr-ripple-out {
   100% {
     top: -32px;
@@ -390,6 +538,7 @@ body {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative; }
 
@@ -404,6 +553,7 @@ body {
   left: 0;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-delay: .1s;
   animation-delay: .1s;
   cursor: pointer; }
 
@@ -443,7 +593,11 @@ body {
       .contact_fluid .row .contact_right .fa_icons span {
         display: block;
         color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin-bottom: 35px; }
         .contact_fluid .row .contact_right .fa_icons span .fas {
@@ -497,6 +651,8 @@ body {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   background-color: rgba(54, 234, 176, 0.9); }
 
@@ -506,7 +662,12 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column; }
 
 .overlay a {
@@ -515,6 +676,8 @@ body {
   font-size: 36px;
   color: #000;
   display: block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   text-transform: uppercase; }
 
@@ -535,7 +698,11 @@ body {
     display: none; }
 
   .resp_navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
 
   .main_fluid {
@@ -562,6 +729,8 @@ body {
       font-size: 28px; }
 
   .experience_box .exp_row .time_col {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     margin-bottom: 20px;
     margin-left: 15px; }
