@@ -271,6 +271,38 @@ body {
   100% {
     left: 0%;
     width: 44%; } }
+.skil_photoshop {
+  background-color: red;
+  position: relative;
+  animation-name: photoshop;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
+
+@keyframes photoshop {
+  0% {
+    left: 0%;
+    width: 0%; }
+  100% {
+    left: 0%;
+    width: 52%; } }
+.skil_illustrator {
+  background-color: red;
+  position: relative;
+  animation-name: illustrator;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
+
+@keyframes illustrator {
+  0% {
+    left: 0%;
+    width: 0%; }
+  100% {
+    left: 0%;
+    width: 47%; } }
 .experience_box {
   margin-top: 200px;
   padding: 50px 0;
