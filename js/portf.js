@@ -73,11 +73,21 @@ $(document).ready(function(){
 
 
 
+$(document).on('scroll',function() {
+var pos =  $(this).scrollTop();
 
+    if (pos >100 ) {
 
+    	$(".logo img").css("width","40px");
+    	$(".logo img").css("padding","10px 0px");
+    	
 
+    }else if (pos < 100) {
 
-
+    	$(".logo img").css("width","60px");
+    	$(".logo img").css("padding","20px 0px");
+    }
+})
 
 
 
@@ -274,7 +284,13 @@ $(document).ready(function(){
 
 
 // })
+//     if (pos >100 ) {
 
+//     	$(".logo img").css("width","40px")
+//     }else if (pos < 100) {
+
+//     	$(".logo img").css("width","60px")
+//     }
 
 // $('.skil_progress_bar').addClass("skil_html")
 			
