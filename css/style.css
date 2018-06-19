@@ -110,13 +110,16 @@ body {
     background-color: rgba(54, 234, 176, 0.2); }
     .main_fluid .main_row .main_col {
       text-align: right; }
-      .main_fluid .main_row .main_col .main_text h1 {
-        color: #1fb89b;
-        font-size: 42px;
-        letter-spacing: 14px;
-        color: #fff;
-        margin-top: 30px;
-        text-transform: capitalize; }
+      .main_fluid .main_row .main_col .main_text {
+        text-align: center;
+        margin-top: 150px; }
+        .main_fluid .main_row .main_col .main_text h1 {
+          font-size: 42px;
+          letter-spacing: 14px;
+          color: #000;
+          font-weight: bold;
+          margin-top: 30px;
+          text-transform: capitalize; }
 
 .about_cont {
   overflow: hidden; }
@@ -798,7 +801,12 @@ body {
     height: 380px; }
 
   .main_fluid .main_row .main_col .main_text h1 {
-    font-size: 25px; }
+    font-size: 25px;
+    letter-spacing: 3px; }
+
+  .main_fluid .main_row .main_col .main_text {
+    margin-top: 80px;
+    letter-spacing: 3px; }
 
   .about_cont .img_row .img_box {
     height: unset;

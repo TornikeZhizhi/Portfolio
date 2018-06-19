@@ -166,13 +166,15 @@ body {
 			text-align: right;
 
 				.main_text {
+					text-align: center;
+					margin-top: 150px;
 
 					 h1 {
-					 	color: #1fb89b;
 					 	font-size: 42px;
 					 	letter-spacing: 14px;
-					 	color: #fff;
-    					// font-family: arial;
+					 	color: #000;
+					 	
+    					font-weight: bold;
     					margin-top: 30px;
     					text-transform: capitalize;
 
@@ -1148,7 +1150,12 @@ body {
 }
 .main_fluid .main_row .main_col .main_text h1 { 
    font-size: 25px;
+       letter-spacing: 3px;
    
+}
+.main_fluid .main_row .main_col .main_text {
+     margin-top: 80px;
+    letter-spacing: 3px;
 }
 
 .about_cont .img_row .img_box {
@@ -1228,3 +1235,8 @@ body {
 
 
 }
+
+
+
+
+
