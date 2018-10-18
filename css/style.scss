@@ -388,14 +388,44 @@ body {
 
    	0% { left:0%;width: 0%}
 
-    100% { left:0%;width: 88%}
+    100% { left:0%;width: 97%}
 }
 
 @keyframes html {
 
    	0% { left:0%;width: 0%}
 
-    100% { left:0%;width: 88%}
+    100% { left:0%;width: 97%}
+}
+
+.skil_react {
+
+    position: relative;
+    -webkit-animation-name: react;
+            animation-name: react;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count:1;
+            animation-iteration-count:1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  	-webkit-animation-timing-function: linear;
+  	        animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes react {
+
+   	0% { left:0%;width: 0%}
+
+    100% { left:0%;width: 80%}
+}
+
+@keyframes react {
+
+   	0% { left:0%;width: 0%}
+
+    100% { left:0%;width: 80%}
 }
 
 
@@ -420,12 +450,12 @@ body {
 @-webkit-keyframes css {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 83%}
+    100% { left:0%;width: 95%}
 }
 @keyframes css {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 83%}
+    100% { left:0%;width: 95%}
 }
 
 
@@ -450,13 +480,13 @@ body {
 @-webkit-keyframes bootstrap {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 73%}
+    100% { left:0%;width: 90%}
 }
 
 @keyframes bootstrap {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 73%}
+    100% { left:0%;width: 90%}
 }
 
 
@@ -481,13 +511,13 @@ body {
 @-webkit-keyframes javascript {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 33%}
+    100% { left:0%;width: 87%}
 }
 
 @keyframes javascript {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 33%}
+    100% { left:0%;width: 87%}
 }
 
 .skil_jquery {
@@ -510,13 +540,13 @@ body {
 @-webkit-keyframes jquery {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 44%}
+    100% { left:0%;width: 91%}
 }
 
 @keyframes jquery {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 44%}
+    100% { left:0%;width: 91%}
 }
 
 
@@ -540,13 +570,13 @@ body {
 @-webkit-keyframes photoshop {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 52%}
+    100% { left:0%;width: 70%}
 }
 
 @keyframes photoshop {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 52%}
+    100% { left:0%;width: 70%}
 }
 
 .skil_illustrator {
@@ -569,13 +599,13 @@ body {
 @-webkit-keyframes illustrator {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 47%}
+    100% { left:0%;width: 68%}
 }
 
 @keyframes illustrator {
    
 	0% { left:0%;width: 0%}
-    100% { left:0%;width: 47%}
+    100% { left:0%;width: 68%}
 }
 
 
@@ -736,6 +766,7 @@ body {
 						        clip-path: polygon(0 11%, 0 0, 11% 0, 87% 0, 100% 0, 
 							100% 8%, 100% 90%, 200% 100%, 90% 100%, 12% 100%, 0 100%, 0 89%);
 						cursor: pointer;
+						    height: 215px;
 
 
 

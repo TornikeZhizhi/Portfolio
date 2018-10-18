@@ -20,9 +20,9 @@ $(".overlay-content a").click(function(){
 
 // navbar
 
-
+/*
 $(document).ready(function(){
-  // Add scrollspy to <body>
+ 
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
   // Add smooth scrolling on all links inside the navbar
@@ -41,12 +41,31 @@ $(document).ready(function(){
         scrollTop: $(hash).offset().top - 52
       }, 800, function(){
    
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        // window.location.hash = hash;
+      
       });
-    }  // End if
+    }  
   });
 });
+
+*/
+
+
+$(document).ready(function() {
+  $('#myNavbar li a').click(function(e) {
+
+    var targetHref = $(this).attr('href');
+
+      $('html, body').animate({
+        scrollTop : $(targetHref).offset().top
+      }, 1000);
+
+
+    e.preventDefault();
+  })
+})
+
+
+
 
 
 
@@ -248,7 +267,7 @@ function check_if_in_view5() {
         (element_top_position <= window_bottom_position)) {
 
       // $('.skil_progress_bar').addClass('skil_html');
-    var clasArr = ["skil_html","skil_css","skil_bootstrap","skil_javascript","skil_jquery","skil_photoshop","skil_illustrator"];  
+    var clasArr = ["skil_html","skil_css","skil_bootstrap","skil_javascript","skil_jquery","skil_react","skil_photoshop","skil_illustrator"];  
      
 		$('.skil_progress_bar').each(function(index,current){
 			$(this).addClass(clasArr[index]);
